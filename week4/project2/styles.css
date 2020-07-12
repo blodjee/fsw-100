@@ -1,0 +1,39 @@
+body {
+    font-family: "Caviar dreams";
+}
+
+.container{
+        border: 5px solid black;
+        font-size: 20px;
+        justify-content: space-around;
+        display: flex;
+        background-color: seagreen;
+        padding: 10px;
+        
+    }
+    
+.container li {
+    display: inline-block;
+}
+
+.container a {
+    text-decoration: none;
+    padding: 0 40px;
+    color: white;
+}
+
+header {
+    position: relative;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px;
+}
+
+td, th {
+    border: 3px solid black;
+    text-align: center;
+    padding: 5px;
+}
