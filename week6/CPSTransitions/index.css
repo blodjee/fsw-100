@@ -1,0 +1,104 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin-top: 40px;
+    display: flex;
+}
+
+.item1 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;  
+    border-radius: 5px;
+}
+
+.item1:hover {
+    background-color: red;
+    color: white;
+}
+
+.item2 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.item2:hover {
+    border-color: green;
+    border-width: 50px;
+    border-style: dashed;
+}
+
+.item3 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.item3:hover{
+border-radius: 100px;
+box-shadow: 10px 10px;
+}
+
+.item4 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.item4:hover{
+    background-color: tomato;
+    color: orangered;
+    border-style: groove;
+
+}
+
+.item5 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.item5:hover{
+    box-shadow:goldenrod;
+    border-style: ridge;
+    background-color: royalblue;
+    position: sticky;
+}
+
+.item6 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin-left: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.item6:hover{
+    border-width: 50px;
+    border-style: dotted;
+    position: relative;
+    color: orangered;
+    opacity: 0;
+}
