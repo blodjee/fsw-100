@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="index.css">
+        
+
+    </head>
+    <body>
+        <p id="man"></p>
+        <p id="woman"></p>
+        <p id="finalPrice">The man final price is </p>
+        <p id="items"></p>
+
+       
+        <script>
+            var shopper =  {
+                man : 'fish',
+                woman: 'carrot',
+                price: 650,
+                deduct: 50,
+                isAvailable: true,
+                gorceryCart: ["rice", "beans", "potato"],
+                finalPrice: function() {
+                    return this.price - this.deduct
+                },
+                items: function() {
+                    return this.man + ' ' + this.woman
+                }
+            }
+
+
+            document.getElementById("man").innerHTML = "The man bought a" + " " + shopper.man;
+            document.getElementById("woman").innerHTML = "The women bought a " + shopper.woman;
+            document.getElementById("finalPrice").append(shopper.finalPrice());
+            document.getElementById('items').innerHTML  = "Here are the items i bought this week" + " " + shopper.gorceryCart;
+        </script>
+
+
+    </body>
+</html>
