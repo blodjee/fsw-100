@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <h4> Hi, Now that you're here.... Pick either of the option to escape the room. </h4>
+
+    <button onclick="hole()">Put hand in the hole to get the key</button><span id="dead">Dead....Try again</span>
+    <button id="key" onclick="key()">Find the key</button>
+    <button onclick="door()">Open the door</button><span id="door">Sorry, you need a key</span>
+
+    <script src="./index.js"></script>
+</body>
+</html>
