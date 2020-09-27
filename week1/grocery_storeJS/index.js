@@ -14,8 +14,8 @@
             items: function() {
                 return this.man + ' ' + this.woman
             }
-        }
-
+           }
+         console.log(shopper)
 
         document.getElementById("man").innerHTML = "The man bought a" + " " + shopper.man;
         document.getElementById("woman").innerHTML = "The woman bought a " + shopper.woman;
