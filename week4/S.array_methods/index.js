@@ -1,3 +1,9 @@
+// function capitalizeAndLowercase (hello){
+// var  
+// }
+
+
+
 var string = "Hello"
 console.log(string.toLowerCase())
 
@@ -41,8 +47,7 @@ function toUpper(str) {
     
 
 
-    //  var newArray = arrayOfFruit.slice("")
-    //   console.log(newArray)
+  
 
       var arrayOfVegetables = ["carrot","tomato","pepper","lettuce"]
       var arrayOfVegetablesLength =arrayOfVegetables.length;
@@ -55,25 +60,14 @@ function toUpper(str) {
       
       var newArrayOfFoods = ["carrot","tomato","pepper","lettuce","banana","apple", "orange","watermelon"]
       newArrayOfFoods.reverse()
-      
+
+
       console.log(newArrayOfFoods)
+    
       newArrayOfFoods = newArrayOfFoods.toString();
       console.log(newArrayOfFoods)
+    ;
 
       
       
       
-
-
-    
-
-      
-      
-      
-
-      
-       
-
-
-      
-    
