@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <style>
+    *, html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        margin: 20px auto;
+        max-width: 600px;
+        border: 2px solid black;
+        height: 300px;
+        text-align: center;
+    }
+
+    label {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+
+    p{
+        padding-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <main>
+        <form id="myForm">
+          <label><b>Enter a Message</b></label><br>
+          <input type="text" name="message" id="user_input"><br><br>
+          <input type="text" name="message" id="user_input1">
+      </form>
+      
+      <input type="submit" onclick="showInput();"><br/>
+      <label><p>Your Data: </p></label>
+      <p><span id='display'></span></p>
+      <p><span id='display1'></span></p>
+    </main>
+
+
+<script src="index.js">
+    // function showInput() {
+    //     var btn = document.createElement("BUTTON");
+    //     document.getElementById('display').innerHTML = document.getElementById("user_input").value;
+    //     btn.innerHTML = "DELETE";
+    //     document.getElementById("display").appendChild(btn);
+    //     btn.style.margin = "0 30px";
+    //     btn.addEventListener('click', () => {
+    //       display.remove();
+    //     });       
+
+    //     var btn1 = document.createElement("BUTTON");
+    //     document.getElementById('display1').innerHTML = document.getElementById("user_input1").value;
+    //     btn1.innerHTML = "DELETE";
+    //     document.getElementById("display1").appendChild(btn1);
+    //     btn1.style.margin = "0 30px";
+    //     btn1.addEventListener('click', () => {
+    //         display1.remove();
+    //     });
+    
+    //     var form = document.getElementById("myForm");
+    //     form.reset();
+    // }
+  </script>
+</body>
+</html>
