@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *,html {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        li {
+            list-style: none;
+            text-align: center;
+        }
+
+        li img {
+            width: 100%;
+        }
+
+        #ItemsTotal {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10em;
+        }
+
+        @media screen and (max-width: 740px) {
+            ul {
+                grid-template-columns: 45% 45%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            ul {
+                display: block;
+            }
+
+            li {
+                margin: 20px 0;
+            }
+
+            footer {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>Mario Pest Control</header>
+
+    <ul>
+        <li>
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/c5901377379563.5c865e2091124.png"
+                alt="baddie-image" />
+            <h3>Baddie One</h3>
+            <h5 id="data">$40</h5>
+            <input name="qnt_1" type="text" id="qnt_1" value="0" size="6" data-price="40"
+                onkeyup="CalculateItemsValue()" />
+        </li>
+        <li>
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/c5901377379563.5c865e2091124.png"
+                alt="baddie-image" />
+            <h3>Baddie Two</h3>
+            <h5>$30</h5>
+            <input name="qnt_2" type="text" id="qnt_2" value="0" size="6" data-price="30"
+                onkeyup="CalculateItemsValue()" />
+        </li>
+        <li>
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/c5901377379563.5c865e2091124.png"
+                alt="baddie-image" />
+            <h3>Baddie Three</h3>
+            <h5>$50</h5>
+            <input name="qnt_3" type="text" id="qnt_3" value="0" size="6" data-price="50"
+                onkeyup="CalculateItemsValue()" />
+        </li>
+        <li>
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/c5901377379563.5c865e2091124.png"
+                alt="baddie-image" />
+            <h3>Baddie Four</h3>
+            <h5>$20</h5>
+            <input name="qnt_4" type="text" id="qnt_4" value="0" size="6" data-price="20"
+                onkeyup="CalculateItemsValue()" />
+        </li>
+    </ul>
+
+    <div id="ItemsTotal">Total Price: $0</div>
+
+
+    <footer>
+        <h3>Contact Us Via</h3>
+        <a href = "mailto: abc@example.com">mariopest@gmail.com</a>
+        <p>33, Brooklyn Avenue. Chicago Street. USA</p>
+    </footer>
+
+
+    <script src="index.js">
+        // var total_items = 4;
+
+        // function CalculateItemsValue() {
+        //     var total = 0;
+        //     for (i = 1; i <= total_items; i++) {
+
+        //         itemID = document.getElementById("qnt_" + i);
+        //         if (typeof itemID === 'undefined' || itemID === null) {
+        //             alert("No such item - " + "qnt_" + i);
+        //         } else {
+        //             total = total + parseInt(itemID.value) * parseInt(itemID.getAttribute("data-price"));
+        //         }
+        //     }
+        //     document.getElementById("ItemsTotal").innerHTML = "Total Price: " +  "$" + total;
+        // }
+    </script>
+</body>
+
+</html>
