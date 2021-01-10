@@ -28,7 +28,7 @@ function toUpper(str) {
          return word[0].toUpperCase() + word.substr(1);
           })
         .join(" ");
-     }
+  }
      console.log(toUpper("hey friends ! practice practice practice!"))
 
      var arrayOfFruit = ["banana","apple", "orange","watermelon"]
