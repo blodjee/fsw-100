@@ -1,7 +1,3 @@
-// function capitalizeAndLowercase (hello){
-// var  
-// }
-
 
 
 var string = "Hello"
