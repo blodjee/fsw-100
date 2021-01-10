@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 10px;
+  background-color: white;
+}
+
+input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+.add {
+  background-color: lightgreen;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+a {
+  color: blue;
+}
+
+.title,.desc {
+    
+    color: darkgoldenrod;
+   
+}
+.delete {
+    margin: 5px;
+    font-size: medium;
+    color : red;
+
+}
+</style>
+</head>
+<body>
+
+<form id="addform" action="#">
+  <div class="container">
+    <h1>To do list</h1>
+    <p>Fill the form to create a todo item.</p>
+    <hr>
+
+    <label for="title"><b>Title</b></label>
+    <input type="text" placeholder="Enter Title" name="title" id="title" required>
+
+    <label for="desc"><b>Description</b></label>
+    <input type="text" placeholder="Enter Description" name="desc" id="desc" required>
+
+    <button type="submit" class="add">Add</button>
+  </div>
+</form>
+<hr>
+<h3>Added Items</h3>
+    <hr>
+<div id="list">  
+</div>
+</body>
+<script src="index.js"></script>
+</html>
